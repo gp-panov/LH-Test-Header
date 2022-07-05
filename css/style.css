@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "HeliosCond";
+  src: local("HeliosCond"), url(/fonts/HeliosCondRegular/HeliosCondRegular.ttf);
+}
+body {
+  color: #252525;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.header {
+  margin: 15px auto;
+  max-width: 1170px;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.header-wrapper-logo {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-wrapper-logo__img {
+  background-color: #FFCC00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0 10px 0;
+  width: 100%;
+}
+.header-wrapper-logo__text {
+  margin-top: 10px;
+  font-family: HeliosCond;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.header-wrapper-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 30px;
+}
+.header-wrapper-info__menu {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #D7D7D7;
+}
+.header-wrapper-info__menu ul {
+  display: flex;
+}
+.header-wrapper-info__menu ul li {
+  margin-right: 25px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.header-wrapper-info__menu ul li a {
+  color: #252525;
+}
+.header-wrapper-info__menu ul li a:hover {
+  color: #FFCC00;
+}
+.header-wrapper-info__menu ul li:last-child {
+  margin-right: 0px;
+}
+.header-wrapper-info-cart {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.header-wrapper-info-cart__freespace {
+  width: 253px;
+  height: 70px;
+  background-color: #E2E2E2;
+}
+.header-wrapper-info-cart__main {
+  display: flex;
+}
+.header-wrapper-info-cart__main-menu {
+  display: flex;
+  flex-direction: column;
+  margin-right: 35px;
+}
+.header-wrapper-info-cart__main-menu .__item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.header-wrapper-info-cart__main-menu .__item a {
+  color: #252525;
+  text-decoration: underline;
+}
+.header-wrapper-info-cart__main-menu .__item a:hover {
+  color: #FFCC00;
+}
+.header-wrapper-info-cart__main-menu .__img {
+  display: flex;
+  justify-content: center;
+  width: 20px;
+  margin-right: 10px;
+}
+.header-wrapper-info-cart__main-product {
+  display: flex;
+}
+.header-wrapper-info-cart__main-product .__item {
+  margin: 0 8px 0 7px;
+}
+.header-wrapper-info-cart__contacts {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+.header-wrapper-info-cart__contacts-item {
+  display: flex;
+  justify-content: space-between;
+}
+.header-wrapper-info-cart__contacts-item:last-child {
+  border-top: 1px solid #D7D7D7;
+  padding-top: 4px;
+}
+.header-wrapper-info-cart__contacts .__phone {
+  padding: 15px 0;
+  font-weight: 700;
+  font-size: 25px;
+}
+.header-wrapper-info-cart__contacts .__link {
+  display: flex;
+  align-items: center;
+}
+.header-wrapper-info-cart__contacts .__link img {
+  margin-right: 4px;
+}
+.header-wrapper-info-cart__contacts .__link a {
+  color: #252525;
+  border-bottom: 1px dotted #252525;
+}
+.header-wrapper-info-cart__contacts .__link a:hover {
+  color: #FFCC00;
+  border-bottom: 1px dotted #FFCC00;
+}
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  width: 100%;
+  height: 34px;
+  background: #252525;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.header-menu__search {
+  background-color: #FFCC00;
+}
+.header-menu__search a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 8px;
+}
+.header-menu__main {
+  height: 100%;
+}
+.header-menu__main ul {
+  display: flex;
+  height: 100%;
+}
+.header-menu__main ul a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 14px;
+}
+.header-menu__main ul a:hover,
+.header-menu__main ul .__active {
+  color: #252525;
+  background-color: #FFCC00;
+}
+.header-menu__sales {
+  background-color: #FFCC00;
+}
+.header-menu__sales a {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  color: #252525;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  height: 100%;
+}
+
+.separator {
+  height: 100%;
+  width: 1px;
+  background-color: #252525;
+}/*# sourceMappingURL=style.css.map */

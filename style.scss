@@ -1,0 +1,254 @@
+@font-face {
+	font-family: 'HeliosCond';
+	src: local('HeliosCond'),
+		url(/fonts/HeliosCondRegular/HeliosCondRegular.ttf);
+}
+
+$colorMain: #252525;
+$colorSecond: #FFCC00;
+
+body {
+	color: $colorMain;
+	font-family: Roboto;
+	font-weight: 400;
+}
+
+strong {
+	font-weight: 700;
+}
+
+.header {
+	margin: 15px auto;
+	max-width: 1170px;
+
+	&-wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		&-logo {
+			width: 210px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&__img {
+				background-color: #FFCC00;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 15px 0 10px 0;
+				width: 100%;
+			}
+
+			&__text {
+				margin-top: 10px;
+				font-family: HeliosCond;
+				font-weight: 700;
+				font-size: 13px;
+				line-height: 15px;
+				text-transform: uppercase;
+				color: #000000;
+			}
+		}
+
+		&-info {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			margin-left: 30px;
+
+			&__menu {
+				display: flex;
+				justify-content: space-between;
+				padding-bottom: 8px;
+				border-bottom: 1px solid #D7D7D7;
+
+				ul {
+					display: flex;
+
+					li {
+						margin-right: 25px;
+						font-size: 12px;
+						font-weight: 400;
+
+						a {
+							color: $colorMain;
+						}
+
+						a:hover {
+							color: $colorSecond
+						}
+
+					}
+
+					li:last-child {
+						margin-right: 0px;
+					}
+				}
+			}
+
+			&-cart {
+				display: flex;
+				justify-content: space-between;
+				padding: 20px 0;
+
+				&__freespace {
+					width: 253px;
+					height: 70px;
+					background-color: #E2E2E2;
+				}
+
+				&__main {
+					display: flex;
+
+					&-menu {
+						display: flex;
+						flex-direction: column;
+						margin-right: 35px;
+
+						.__item {
+							display: flex;
+							align-items: center;
+							font-size: 14px;
+							margin-bottom: 10px;
+
+							a {
+								color: $colorMain;
+								text-decoration: underline;
+							}
+
+							a:hover {
+								color: $colorSecond;
+							}
+						}
+
+						.__img {
+							display: flex;
+							justify-content: center;
+							width: 20px;
+							margin-right: 10px;
+						}
+					}
+
+					&-product {
+						display: flex;
+
+						.__item {
+							margin: 0 8px 0 7px;
+						}
+					}
+				}
+
+				&__contacts {
+					display: flex;
+					flex-direction: column;
+					font-size: 12px;
+
+					&-item {
+						display: flex;
+						justify-content: space-between;
+					}
+
+					&-item:last-child {
+						border-top: 1px solid #D7D7D7;
+						padding-top: 4px;
+					}
+
+					.__phone {
+						padding: 15px 0;
+						font-weight: 700;
+						font-size: 25px;
+					}
+
+					.__link {
+						display: flex;
+						align-items: center;
+
+						img {
+							margin-right: 4px;
+						}
+
+						a {
+							color: $colorMain;
+							border-bottom: 1px dotted $colorMain
+						}
+
+						a:hover {
+							color: $colorSecond;
+							border-bottom: 1px dotted $colorSecond
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&-menu {
+		display: flex;
+		justify-content: space-between;
+		margin: 30px 0;
+		width: 100%;
+		height: 34px;
+		background: $colorMain;
+		box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+		border-radius: 5px;
+		overflow: hidden;
+
+		&__search {
+			background-color: $colorSecond;
+
+			a {
+				display: flex;
+				align-items: center;
+				height: 100%;
+				padding: 0 8px;
+			}
+		}
+
+		&__main {
+			height: 100%;
+
+			ul {
+				display: flex;
+				height: 100%;
+
+				a {
+					display: flex;
+					align-items: center;
+					height: 100%;
+					padding: 0 20px;
+					font-weight: 500;
+					color: #ffffff;
+					font-size: 14px;
+				}
+
+				a:hover,
+				.__active {
+					color: $colorMain;
+					background-color: $colorSecond;
+				}
+			}
+		}
+
+		&__sales {
+			background-color: $colorSecond;
+
+			a {
+				display: flex;
+				align-items: center;
+				padding: 0 15px;
+				color: $colorMain;
+				text-transform: uppercase;
+				font-size: 14px;
+				font-weight: 500;
+				height: 100%;
+			}
+		}
+	}
+}
+
+.separator {
+	height: 100%;
+	width: 1px;
+	background-color: #252525;
+}
