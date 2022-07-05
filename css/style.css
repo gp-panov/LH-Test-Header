@@ -1,6 +1,6 @@
 @font-face {
   font-family: "HeliosCond";
-  src: local("HeliosCond"), url(../fonts/HeliosCondRegular/HeliosCondRegular.ttf);
+  src: local("HeliosCond"), url("../fonts/HeliosCondRegular/HeliosCondRegular.ttf");
 }
 body {
   color: #252525;
