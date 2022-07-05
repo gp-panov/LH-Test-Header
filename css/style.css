@@ -28,10 +28,13 @@ strong {
 }
 .header-wrapper-logo__img {
   background-color: #FFCC00;
+  width: 100%;
+}
+.header-wrapper-logo__img a {
+  padding: 7px 0 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px 0 10px 0;
   width: 100%;
 }
 .header-wrapper-logo__text {
